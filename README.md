@@ -24,4 +24,4 @@ Figma
 
 '[https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings_external-link?node-id=2%3A7)'
 
-Ссылка на проект https://oksanasag.github.io/mesto-project/
+Ссылка на проект https://oksanasag.github.io/Month-of-Landings1/
