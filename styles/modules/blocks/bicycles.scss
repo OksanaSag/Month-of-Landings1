@@ -1,0 +1,230 @@
+.bicycles {
+    padding: 4.167vw 8.333vw 0;
+    @media screen and (max-width: 572px) {
+        padding: 0 18px 40px;
+        &::after {
+            content: "";
+            background-color: #E3E3E3;
+            height: 1px;
+            width: 100%;
+            display: block;
+        }
+        }
+    &__cards_highway {
+        display: none;
+    }
+    &__cards_gravel {
+        display: none;
+    }
+    &__cards_TT {
+        display: none;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width: 327px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+            }
+    }
+    &__title {
+        margin: 0;
+        font-weight: 500;
+        font-size: 55px;
+        line-height: 60px;
+        @extend %titleFont;
+        @media screen and (max-width: 572px) {
+            font-size: 32px;
+            line-height: 40px;
+            }
+    }
+    &__button {
+        padding: 0;
+        border: none;
+        color: #222222;
+        opacity: .7;
+        font-size: 18px;
+        line-height: 1.56;
+        background-color: transparent;
+        transition: $transition;
+        cursor: pointer;
+        @media screen and (max-width: 572px) {
+            font-size: 11px;
+            padding-bottom: 20px;
+            }
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    &__icon {
+        display: none;
+        @media screen and (max-width: 572px) {
+            display: block;
+            position: absolute;
+            right: 12px;
+            top: 13px;
+            }
+    }
+    &__buttons {
+        display: flex;
+        gap: 40px;
+        @media screen and (max-width: 572px) {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            height: 30px;
+            align-items: flex-start;
+            transition: $transition;
+            }
+            &_select_list {
+                display: none;
+                @media screen and (max-width: 572px) {
+                    display: flex;
+                    border: 1px solid #E3E3E3;
+                    width: 114px;
+                    height: 30px;
+                    background-color: #F4F4F4;
+                    font-size: 11px;
+                    font-weight: 600;
+                    }
+            }
+    }
+    
+    &__cards {
+        gap: 2.083vw;
+        padding: 8.333vw 0 4.167vw;
+        @media screen and (max-width: 572px) {
+            padding: 5.133vw 0 4.167vw;
+            }
+        
+    }
+    &__rim-image {
+        width: 26.389vw;
+        height: 26.389vw;
+        padding: 1.389vw;
+        box-sizing: border-box;
+        background-color: #F4F4F4;
+        box-shadow: 0 20px 140px rgb(0 0 0 / 6%);
+        border-radius: 20px;
+        &:hover {
+            box-shadow: 0 20px 140px rgb(0 0 0 / 11%);
+        }
+        @media screen and (max-width: 572px) {
+            width: 254.11px;
+            height: 254.11px;
+            padding: 0;
+            margin: auto auto 0;
+            box-shadow: none;
+            &:hover {
+                box-shadow: none;
+            }
+
+        }
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 1.528vw;
+        @media screen and (max-width: 572px) {
+            width: 284px;
+            height: 306px;
+            align-items: center;
+            gap: 3px;
+            padding-bottom: 16px;
+            box-sizing: border-box;
+            background-color: #F4F4F4;
+            box-shadow: 0 20px 140px rgb(0 0 0 / 6%);
+            border-radius: 20px;
+            &:hover {
+                box-shadow: 0 20px 140px rgb(0 0 0 / 11%);
+            }
+        }
+    }
+    &__link {
+        color: $titleColor;
+        text-decoration: none;
+        padding-left: 6px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+        @media screen and (max-width: 572px) {
+            font-size: 14px;
+            line-height: 18px;
+            padding-left: 0;
+        }
+    }
+    &__dropdown {
+        @media screen and (max-width: 572px) {
+            overflow: hidden;
+            height: 30px;
+            position: relative;
+            padding: 8px 12px;
+            box-sizing: border-box;
+            border: 1px solid #E3E3E3;
+            width: 114px;
+            border-radius: 2px;
+            position: relative;&:hover{
+                overflow: visible;
+            }
+        }
+        &:hover .bicycles__buttons  {display: flex;}
+    }
+    &__slider-dots {
+        display: none;
+        @media screen and (max-width: 572px) {
+            padding: 10px 0 80px;
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+            }
+       
+    }
+    &__slider-dot {
+        cursor: pointer;
+        height: 4px;
+        width: 4px;
+        background-color: #CACACA;
+        border-radius: 50%;
+        .active,
+        &:hover {
+            background-color: $titleColor;
+        }
+    }
+}
+.active {
+    background-color: $titleColor;
+}
+.bicycles__button_checked {
+    color: #151515;
+    opacity: 1;
+    font-weight: 600;
+    transition: $transition;
+    &:hover {
+        opacity: 0.75;
+    }
+  }
+  .bicycles_checked {
+  display: flex;
+  @media screen and (max-width: 572px) {
+    justify-content: center;
+}
+  }
+  .margin_minus {
+    @media screen and (max-width: 572px) {
+        margin-top: -39px;
+        }
+   
+}
+.margin_minusBig {
+    @media screen and (max-width: 572px) {
+        margin-top: -75px;
+        }
+   
+}

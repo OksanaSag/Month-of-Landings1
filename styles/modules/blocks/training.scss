@@ -1,0 +1,54 @@
+.training {
+    padding: 10.417vw 8.333vw 8.333vw;
+    @media screen and (max-width: 572px) {
+        padding: 0 18px 60px;
+        }
+    &__container {
+        display: flex;
+        gap: 11.111vw;
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+            }
+    }
+    &__image {
+        width: 40.278vw;
+        height: 31.944vw;
+        @media screen and (max-width: 768px) {
+            display: none;
+            }
+    }
+    &__image-mobile {
+        display: none;
+        @media screen and (max-width: 768px) {
+            display: block;
+            width: 284px;
+            height: 225px;
+            }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__links {
+        display: flex;
+        gap: 30px;
+        @media screen and (max-width: 768px) {
+            padding-top: 40px;
+            }
+    }
+    &__link {
+        text-decoration: none;
+        color: $titleColor;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        @media screen and (max-width: 572px) {
+            font-size: 14px;
+            line-height: 20px;
+            }
+        &:hover {
+            opacity: .75;
+        }
+    }
+}

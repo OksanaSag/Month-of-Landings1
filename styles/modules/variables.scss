@@ -1,0 +1,14 @@
+$titleColor: #151515;
+$contentColor: rgba(34, 34, 34, .7);
+$buttonColor: #24B47E;
+$backgroundDay: #F4F4F4;
+$backgroundNight: #333333;
+$textColor: #FFFFFF;
+$transition: all 0.5s ease;
+
+%titleFont {
+    font-size: 3.819vw;
+    line-height: 1.09;
+    font-weight: 500;
+    color: $titleColor;
+}

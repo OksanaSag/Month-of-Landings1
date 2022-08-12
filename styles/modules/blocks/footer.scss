@@ -1,0 +1,93 @@
+.footer {
+    background-color: #EFEFEF;
+    padding: 5.556vw 8.333vw 4.167vw;
+    @media screen and (max-width: 572px) {
+        padding: 60px 18px 25px;
+        }
+    &__action {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        @media screen and (max-width: 572px) {
+            gap: 40px;
+            }
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+    }
+    &__text {
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        width: 284px;
+    }
+    &__copyright {
+        color: #CFCFCF;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+    }
+    &__input {
+        width: 360px;
+        height: 50px;
+        padding: 11px 0 11px 20px;
+        box-sizing: border-box;
+        border: 1px solid rgb(78%, 78%, 78%, .5);
+        border-radius: 4px;
+        background-color: transparent;
+        @media screen and (max-width: 572px) {
+            width: 284px;
+            }
+        &:focus {
+            outline: none;
+            border-color: #C7C7C7;
+          }
+        &::placeholder {
+            font-size: 13px;
+            line-height: 28px;
+          }
+        &:hover {
+        &::placeholder {
+            color: $titleColor;
+          }
+        }
+        &:focus::-webkit-input-placeholder { 
+            color:transparent; 
+        }
+    }
+   
+    &__input-button {
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        right: 22px;
+        margin: 0;
+        padding: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        display: none;
+        cursor: pointer;
+    }
+    &__form {
+        position: relative;
+        width: 360px;
+        @media screen and (max-width: 572px) {
+            width: 284px;
+            }
+    }
+    &__logo {
+        display: none;
+        @media screen and (max-width: 767px) {
+            display: block;
+            margin-top: -10px;
+            }
+    }
+}
+.display-block {
+    display: block;
+}

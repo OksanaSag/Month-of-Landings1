@@ -1,0 +1,106 @@
+.road {
+    padding: 4.167vw 0 4.167vw 8.333vw;
+    @media screen and (max-width: 572px) {
+        position: relative;
+        padding: 0 18px 40px;
+        &::after {
+            content: "";
+            background-color: #E3E3E3;
+            height: 1px;
+            width: 100%;
+            margin-top: 80px;
+            display: block;
+        }
+        }
+    &__highway {
+        display: none;
+    }
+    &__gravel{
+        display: none;
+    }
+    &__TT {
+        display: none;
+    }
+    &__buttons-arrows {
+        display: flex;
+        gap: 20px;
+        @media screen and (max-width: 572px) {
+            gap: 10px;
+            position: absolute;
+            top: 10px;
+            right: 18px;
+            }
+    }
+    &__arrows {
+        height: 50px;
+        border-radius: 50%;
+        width: 50px;
+        box-sizing: border-box;
+        background: #EBEBEB;
+        cursor: pointer;
+        transition: $transition;
+        border: transparent;
+        @media screen and (max-width: 572px) {
+            width: 24px;
+            height: 24px;
+            }
+        &:hover {
+            opacity: .6;
+        }
+    }
+    &__arrow {
+        &_color_white {
+            display: none;
+        }
+        @media screen and (max-width: 572px) {
+            width: 4.5px;
+            height: 10px;
+            }
+    }
+    &__images {
+        display: flex;
+        gap: 2.778vw;
+        position: relative;
+        overflow: hidden;
+        padding: 5.556vw 0 3.472vw;
+        @media screen and (max-width: 572px) {
+            padding: 40px 0;
+            }
+    }
+    &__green-sign {
+        position: absolute;
+        bottom: 66px;
+        @media screen and (max-width: 572px) {
+            width: 70px;
+            height: 28px;
+            bottom: 53px;
+            }
+    }
+    &__line {
+        position: absolute;
+        bottom: 78px;
+        left: 16px;
+        @media screen and (max-width: 572px) {
+            width: 35px;
+            height: 12px;
+            bottom: 60px;
+            left: 10px;
+            }
+    }
+    &__image {
+        min-width: 650px;
+        height: 400px;
+        object-fit: cover;
+        @media screen and (max-width: 768px) {
+            min-width: 500px;
+            height: 355px;
+            }
+            @media screen and (max-width: 572px) {
+                min-width: 284px;
+                height: 175px;
+                }
+    }
+}
+.road_checked {
+    display: block;
+  }

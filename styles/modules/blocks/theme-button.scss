@@ -1,0 +1,174 @@
+.theme-button {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    margin-top: -22px;
+    &_display_none {
+        @media screen and (max-width: 767px) {
+            display: none;
+            margin-top: 0;
+            }
+    }
+    &__input-container {
+        width: 44px;
+        height: 24px;
+        border-radius: 50px;
+        position: relative;
+    }
+    &__toggle {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 44px;
+            height: 24px;
+            background-color: #FFFFFF;
+            position: absolute;
+            right: 0;
+            border-radius: 20px;
+            outline: none;
+            cursor: pointer;
+            &:after{
+                content: "";
+                position: absolute;
+                height: 20px;
+                width: 20px;
+                background-color: $buttonColor;
+                top: 2px;
+                left: 2px;
+                border-radius: 50%;
+                transition: all 0.5s ease;
+            }
+        }
+        &__dark {
+            display: none;
+        }
+        &__dark-theme .theme-button__light {
+            display: none;
+        }
+        &__dark-theme .theme-button__dark {
+            display: block;
+        }
+    &__dark-theme {
+        background-color: $backgroundNight;
+        color: $backgroundDay;
+    }
+    &__dark-theme #togglePopup {
+        background-color: #545454;
+            
+    }
+    &__dark-theme #togglePopup::after {
+        left: 22px;            
+    }
+    &__dark-theme #toggleFooter {
+        background-color: #545454;
+            
+    }
+    &__dark-theme #toggleFooter::after {
+        left: 22px;            
+    }
+    &__dark-theme .theme-text-white {
+        color: #FFFFFF;          
+    }
+    &__dark-theme .header__popup-container {
+        background-color: $backgroundNight;        
+    }
+    &__dark-theme .header__links {
+        background-color: $backgroundNight;        
+    }
+    &__dark-theme .text-block__paragraph_theme_dark {
+        color: #E6E6E6;          
+    }
+    &__dark-theme  .text-block__title, .bicycles__title {
+        color: #FFFFFF;
+    }
+    &__dark-theme  .bicycles__title {
+        color: #FFFFFF;
+    } 
+    &__dark-theme  .road__arrows{
+        background-color: #434343;
+
+    } 
+
+    &__dark-theme .road__arrow_color_black {
+        display: none;
+    }
+    &__dark-theme .road__arrow_color_white {
+        display: inline;
+    }
+    &__dark-theme .bicycles__button {
+        color: #E5E5E5;
+        opacity: .7;
+        &:hover {
+            opacity: .5;
+        }
+        &_checked {
+            color: #FFFFFF;
+            opacity: 1;
+            &:hover {
+                opacity: .65;
+            }
+        }
+
+    }
+    &__dark-theme .active {
+        background-color: $backgroundDay;
+        height: 5px;
+        width: 5px;
+    }
+    &__dark-theme .bicycles__link {
+        color: $textColor;
+        @media screen and (max-width: 572px) {
+            color: #151515;
+            }
+    }
+    &__dark-theme .training__link {
+        color: #FFFFFF;
+        &:hover {
+            opacity: .65;
+        }
+    }
+    &__dark-theme .footer {
+        background-color: #2F2F2F;
+    }
+    &__dark-theme .footer__copyright {
+    color: #565656;
+    }
+    &__dark-theme .footer__input {
+        color: #FFFFFF;
+        &::placeholder {
+            color: #FFFFFF;
+            opacity: .7;
+          }
+          &:hover {
+            &::placeholder {
+                color: #FFFFFF;
+                opacity: 1;
+              }
+    }
+    &:focus::-webkit-input-placeholder { 
+        color:transparent; 
+    }
+    }
+    &__dark-theme .footer__input-button {
+        color: #FFFFFF;
+    }
+    &__dark-theme .bicycles__card {
+        @media screen and (max-width: 572px) {
+            &:hover {
+                box-shadow: 0 20px 140px rgb(0 0 0 / 55%);
+            }
+        }
+
+    }
+    &__dark-theme .bicycles__rim-image {
+        &:hover {
+            box-shadow: 0 20px 140px rgb(0 0 0 / 55%);
+        }
+        @media screen and (max-width: 572px) {
+            &:hover {
+                box-shadow: none;
+            }
+
+        }
+    }
+}
+    
