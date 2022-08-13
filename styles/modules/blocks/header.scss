@@ -19,6 +19,7 @@
         align-items: center;
         background-color: $backgroundDay;
         z-index: 2;
+        gap: 34px;
         @media screen and (max-width: 767px) {            
               display: none;
         }         
@@ -29,19 +30,20 @@
         font-size: 14px;
         line-height: 18px;
         transition: $transition;
+        &:last-of-type {
+            margin-right: 120px;
+        }
         @media screen and (max-width: 767px) {
             font-size: 18px;
             font-weight: 500;
+            &:last-of-type {
+                margin-right: 0;
+            }
         }
         &:hover {
             opacity: 0.7;
         }
-    }
-    &__link_margin_right {
-        margin-right: 34px;
-        &:last-of-type {
-            margin-right: 120px;
-        }
+    
     }
     &__button {
         display: none;
@@ -108,19 +110,19 @@
         transform: rotate(-45deg);
         position: relative;
         width: 22px;
-            &:hover .header__image-left {
+            &:hover .header__image-left-line {
                 box-shadow: 0px 2px 1px 1px rgb(175, 174, 174);      
             }
-            &:hover .header__image-right {
+            &:hover .header__image-right-line {
                 box-shadow: -3px 0px 1px 0px rgb(175, 174, 174);      
             }       
     }
-    &__image-left {
+    &__image-left-line {
         position: absolute;
         left: 0;
         transition: all 0.5s ease;
     }
-    &__image-right {
+    &__image-right-line {
         transform: rotate(-90deg);
         position: absolute;
         left: 0;

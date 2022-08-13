@@ -79,8 +79,6 @@ nextButtonGravel.addEventListener("click", () => {
       const roadHighway = document.querySelector(".road__highway");
       const roadGravel = document.querySelector(".road__gravel");
       const roadTT = document.querySelector(".road__TT");
-      const bigBackground = document.querySelector("#bigBackground");
-      const smallBackground = document.querySelector("#smallBackground");
       const bikeFix = document.querySelector("#rimBikeFix");
 
 
@@ -144,9 +142,6 @@ nextButtonGravel.addEventListener("click", () => {
           showAll();
         bicyclesButtons.classList.remove("margin_minusBig");
         bicyclesButtons.classList.add("margin_minus");
-
-        bigBackground.classList.add("flex-element_display_block");
-        smallBackground.classList.add("flex-element_display_block");
         bikeFix.classList.remove("flex-element__rim-bike-fix_position_middle");
         bikeFix.classList.add("flex-element__rim-bike-fix_position_high");
         bikeFix.classList.remove("flex-element__rim-bike-fix_position_low");
@@ -169,9 +164,6 @@ nextButtonGravel.addEventListener("click", () => {
          showAll();
         bicyclesButtons.classList.add("margin_minusBig");
         bicyclesButtons.classList.remove("margin_minus");
-
-        bigBackground.classList.add("flex-element_display_block");
-        smallBackground.classList.add("flex-element_display_block");
         bikeFix.classList.remove("flex-element__rim-bike-fix_position_middle");
         bikeFix.classList.remove("flex-element__rim-bike-fix_position_high");
         bikeFix.classList.add("flex-element__rim-bike-fix_position_low");

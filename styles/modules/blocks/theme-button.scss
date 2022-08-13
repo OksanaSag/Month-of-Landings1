@@ -9,12 +9,6 @@
             margin-top: 0;
             }
     }
-    &__input-container {
-        width: 44px;
-        height: 24px;
-        border-radius: 50px;
-        position: relative;
-    }
     &__toggle {
             -webkit-appearance: none;
             appearance: none;
@@ -26,6 +20,10 @@
             border-radius: 20px;
             outline: none;
             cursor: pointer;
+            width: 44px;
+            height: 24px;
+            border-radius: 50px;
+            position: relative;
             &:after{
                 content: "";
                 position: absolute;
@@ -65,7 +63,7 @@
     &__dark-theme #toggleFooter::after {
         left: 22px;            
     }
-    &__dark-theme .theme-text-white {
+    &__dark-theme .header__link {
         color: #FFFFFF;          
     }
     &__dark-theme .header__popup-container {
