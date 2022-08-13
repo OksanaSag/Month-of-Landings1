@@ -7,6 +7,7 @@
     }
     &__title {
         margin: 0;
+        font-weight: 700;
         @extend %titleFont;
         @media screen and (max-width: 850px) {
             font-size: 32px;

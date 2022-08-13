@@ -1,4 +1,4 @@
-.bicycles__title, .text-block__title {
+.text-block__title {
   font-size: 3.819vw;
   line-height: 1.09;
   font-weight: 500;
@@ -48,6 +48,12 @@
   font-size: 14px;
   line-height: 18px;
   transition: all 0.5s ease;
+}
+@media screen and (max-width: 767px) {
+  .header__link {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
 .header__link:hover {
   opacity: 0.7;
@@ -100,7 +106,8 @@
   transition: -50%;
   transform: translate(-50%);
   box-sizing: border-box;
-  width: 320px;
+  width: 100%;
+  height: 100%;
 }
 .header__popup-header {
   padding: 0 18px 0 0;
@@ -337,6 +344,7 @@
 }
 .text-block__title {
   margin: 0;
+  font-weight: 700;
 }
 @media screen and (max-width: 850px) {
   .text-block__title {
@@ -383,13 +391,8 @@
 .flex-element {
   display: flex;
   padding-left: 8.333vw;
-  gap: 250px;
+  gap: 3.472vw;
   position: relative;
-}
-@media screen and (max-width: 1324px) {
-  .flex-element {
-    gap: 15vw;
-  }
 }
 @media screen and (max-width: 767px) {
   .flex-element {
@@ -421,8 +424,11 @@
   padding-top: 1.389vw;
   object-fit: cover;
   height: 58.056vw;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 572px) {
   .flex-element__image {
     width: 254px;
     height: 348px;
@@ -456,6 +462,10 @@
     width: 284px;
     height: 46px;
     margin-top: 0;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 600;
+    letter-spacing: 1px;
   }
 }
 .flex-element__text-line {
@@ -464,7 +474,7 @@
   font-size: 1.25vw;
   line-height: 1;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 804px) {
   .flex-element__text-line {
     display: none;
   }
@@ -518,8 +528,8 @@
   height: 20.833vw;
   box-sizing: border-box;
   padding: 1.389vw 3.472vw;
-  position: absolute;
-  left: -13.889vw;
+  position: sticky;
+  top: 24.097vw;
   background-color: #F4F4F4;
   box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
@@ -535,13 +545,16 @@
   }
 }
 .flex-element__popup {
-  width: 56.25vw;
+  min-width: 56.25vw;
   height: 59.444vw;
   position: relative;
   right: 0;
   bottom: 0;
+  padding-bottom: 5.486vw;
+  padding-top: 24.097vw;
+  box-sizing: border-box;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 572px) {
   .flex-element__popup {
     width: 284px;
     height: 348px;
@@ -559,12 +572,6 @@
 @media screen and (max-width: 572px) {
   .flex-element__popup_display_none {
     display: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  .flex-element__popup {
-    width: 254px;
-    height: 348px;
   }
 }
 
@@ -648,6 +655,7 @@
   padding: 0;
   font-size: 2.361vw;
   line-height: 3.056vw;
+  font-weight: 600;
 }
 @media screen and (max-width: 572px) {
   .quote__quotation {
@@ -655,14 +663,14 @@
     line-height: 29px;
   }
 }
-.quote__description .quote__author {
+.quote__author {
   margin: 0;
   padding: 0;
   font-size: 1.389vw;
   line-height: 2.222vw;
 }
 @media screen and (max-width: 572px) {
-  .quote__description .quote__author {
+  .quote__author {
     font-size: 14px;
     line-height: 22px;
   }
@@ -844,9 +852,10 @@
 }
 .bicycles__title {
   margin: 0;
-  font-weight: 500;
-  font-size: 55px;
-  line-height: 60px;
+  font-weight: 700;
+  font-size: 3.819vw;
+  line-height: 4.167vw;
+  letter-spacing: -0.5px;
 }
 @media screen and (max-width: 572px) {
   .bicycles__title {
@@ -1136,7 +1145,7 @@
 }
 @media screen and (max-width: 572px) {
   .footer {
-    padding: 60px 18px 25px;
+    padding: 60px 18px 16px;
   }
 }
 .footer__action {
