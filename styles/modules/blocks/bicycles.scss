@@ -10,15 +10,6 @@
             display: block;
         }
         }
-    &__cards_highway {
-        display: none;
-    }
-    &__cards_gravel {
-        display: none;
-    }
-    &__cards_TT {
-        display: none;
-    }
     &__container {
         display: flex;
         align-items: center;
@@ -71,7 +62,6 @@
         display: flex;
         gap: 40px;
         @media screen and (max-width: 572px) {
-            display: flex;
             flex-direction: column;
             gap: 0;
             height: 30px;
@@ -95,6 +85,7 @@
     &__cards {
         gap: 2.083vw;
         padding: 8.333vw 0 4.167vw;
+        display: none;
         @media screen and (max-width: 572px) {
             padding: 5.133vw 0 4.167vw;
             }
@@ -171,11 +162,11 @@
             border: 1px solid #E3E3E3;
             width: 114px;
             border-radius: 2px;
-            position: relative;&:hover{
+            position: relative;
+            &_position_open {
                 overflow: visible;
             }
         }
-        &:hover .bicycles__buttons  {display: flex;}
     }
     &__slider-dots {
         display: none;

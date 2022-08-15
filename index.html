@@ -86,13 +86,11 @@
                 src="./images/forest.png"
                 alt=""
               />
-              <div class="flex-element__rim-bike-fix">
                 <img
                   class="flex-element__bike-fix"
                   src="./images/bike-fix.svg"
                   alt=""
                 />
-              </div>
             </div>
 
             <p class="text-block__paragraph text-block__paragraph_theme_dark">
@@ -112,18 +110,11 @@
         </div>
         <div class="flex-element__popup flex-element__popup_display_none">
           <img class="flex-element__image" src="./images/forest.png" alt="" />
-          <div class="flex-element__big-background" id="bigBackground"></div>
-          <div class="flex-element__rim-bike-fix" id="rimBikeFix">
             <img
               class="flex-element__bike-fix"
               src="./images/bike-fix.svg"
               alt=""
             />
-          </div>
-          <div
-            class="flex-element__small-background"
-            id="smallBackground"
-          ></div>
         </div>
       </section>
 
@@ -140,7 +131,7 @@
         </div>
       </section>
 
-      <section class="road road__highway">
+      <section class="road" id="roadHighway">
         <div class="text-block">
           <h1 class="text-block__title">Шоссе</h1>
           <p
@@ -154,8 +145,8 @@
         <div class="road__images">
           <img class="road__image" src="./images/road1.png" alt="" />
           <img class="road__image" src="./images/road2.png" alt="" />
-          <img class="road__green-sign" src="./images/biggreen.svg" alt="" />
-          <img class="road__line" src="./images/line1.svg" alt="" />
+            <img class="road__green-sign" src="./images/biggreen.svg" alt="" />
+            <img class="road__line" src="./images/line1.svg" alt="" />
         </div>
         <div class="road__buttons-arrows">
           <button class="road__arrows" id="arrowLeft" type="button">
@@ -184,7 +175,7 @@
           </button>
         </div>
         <p
-          class="text-block__paragraph text-block__paragraph_weight_value text-block__paragraph_theme_dark text-block__paragraph_position_befor"
+          class="text-block__paragraph text-block__paragraph_weight_value text-block__paragraph_theme_dark text-block__paragraph_position_before"
         >
           На шоссейном велосипеде можно ездить по асфальту на разных градиентах:
           будь то горы или равнины. Гонки проходят в командном пелотоне, но
@@ -192,7 +183,7 @@
         </p>
       </section>
 
-      <section class="road road__gravel">
+      <section class="road" id="roadGravel">
         <div class="text-block">
           <h1 class="text-block__title">Грэвел</h1>
           <p
@@ -241,7 +232,7 @@
           </button>
         </div>
         <p
-          class="text-block__paragraph text-block__paragraph_weight_value text-block__paragraph_theme_dark text-block__paragraph_position_befor"
+          class="text-block__paragraph text-block__paragraph_weight_value text-block__paragraph_theme_dark text-block__paragraph_position_before"
         >
           Грэвел похож на шоссейный велосипед, но конструкция рамы немного
           отличается, и на нём стоят более широкие покрышки, всё для того чтобы
@@ -249,7 +240,7 @@
         </p>
       </section>
 
-      <section class="road road__TT">
+      <section class="road" id="roadTT">
         <div class="text-block">
           <h1 class="text-block__title">ТТ</h1>
           <p
@@ -298,7 +289,7 @@
           </button>
         </div>
         <p
-          class="text-block__paragraph text-block__paragraph_weight_value text-block__paragraph_theme_dark text-block__paragraph_position_befor"
+          class="text-block__paragraph text-block__paragraph_weight_value text-block__paragraph_theme_dark text-block__paragraph_position_before"
         >
           ТТ — это велосипед для триатлона или раздельного старта, гооняют на
           таком велике только по равнинному асфальту, велик очень быстрые и
@@ -323,7 +314,7 @@
           </div>
         </div>
 
-        <div class="bicycles__cards bicycles__cards_highway">
+        <div class="bicycles__cards" id="bicyclesCardsHighway">
           <div class="bicycles__card bicycles__card_highway">
             <a
               class="bicycles__rim-image"
@@ -382,7 +373,7 @@
             >
           </div>
         </div>
-        <div class="bicycles__cards bicycles__cards_gravel">
+        <div class="bicycles__cards" id="bicyclesCardsGravel">
           <div class="bicycles__card bicycles__card_gravel">
             <a
               class="bicycles__rim-image"
@@ -440,7 +431,7 @@
             >
           </div>
         </div>
-        <div class="bicycles__cards bicycles__cards_TT">
+        <div class="bicycles__cards" id="bicyclesCardsTT">
           <div class="bicycles__card bicycles__card_TT">
             <a
               class="bicycles__rim-image"
@@ -549,7 +540,7 @@
       <div class="footer__action">
         <p class="footer__text">Подпишитесь на рассылку —</p>
 
-        <form class="footer__form" action="#">
+        <form class="footer__form" action="#" name="inputEmail">
           <input
             class="footer__input"
             type="email"

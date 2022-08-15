@@ -3,4 +3,6 @@
     margin: 0;
     background-color: $backgroundDay;
     transition: $transition;
+    max-width: 1440px;
+    min-width: 320px;
 }

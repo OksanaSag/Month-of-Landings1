@@ -1,8 +1,24 @@
 // popup
 
+const bicyclesIcon = document.querySelector(".bicycles__icon");
+const dropdown = document.querySelector(".bicycles__dropdown");
+bicyclesIcon.addEventListener("click", (evt) => {
+  open(dropdown);
+});
+function open(evt) {
+  evt.classList.add("bicycles__dropdown_position_open");
+}
+function remove(evt) {
+  evt.classList.remove("bicycles__dropdown_position_open");
+}
+
+
+
+
 const buttonAdd = document.querySelector(".header__button");
 const buttonClose = document.querySelector(".header__button-x");
 const popups = document.querySelector(".header__popup");
+
 let currentMode = window.matchMedia("(max-width: 572px)").matches;
 function openPopup(popup) {
     popup.classList.add("header__popup_opened");
@@ -76,9 +92,9 @@ nextButtonGravel.addEventListener("click", () => {
   });
 
   // кнопки вид покрытия
-      const roadHighway = document.querySelector(".road__highway");
-      const roadGravel = document.querySelector(".road__gravel");
-      const roadTT = document.querySelector(".road__TT");
+      const roadHighway = document.querySelector("#roadHighway");
+      const roadGravel = document.querySelector("#roadGravel");
+      const roadTT = document.querySelector("#roadTT");
       const bikeFix = document.querySelector("#rimBikeFix");
 
 
@@ -91,16 +107,15 @@ nextButtonGravel.addEventListener("click", () => {
       //const bikeFixHigh = document.querySelector(".flex-element__rim-bike-fix_position_high");
       //const bikeFixLow = document.querySelector(".flex-element__rim-bike-fix_position_low");
 
-      const Highway = document.querySelector(".bicycles__cards_highway");
-      const Gravel = document.querySelector(".bicycles__cards_gravel");
-      const TT = document.querySelector(".bicycles__cards_TT");
+      const Highway = document.querySelector("#bicyclesCardsHighway");
+      const Gravel = document.querySelector("#bicyclesCardsGravel");
+      const TT = document.querySelector("#bicyclesCardsTT");
 
       const tabHighway = document.querySelector(".bicycles__button_highway");
       const tabGravel = document.querySelector(".bicycles__button_gravel");
       const tabTT = document.querySelector(".bicycles__button_TT");
       const tabs = document.querySelectorAll(".bicycles__button");
 
-      bikeFix.classList.add("flex-element__rim-bike-fix_position_middle");
       Highway.classList.add("bicycles_checked");
       roadHighway.classList.add("road_checked");
       tabHighway.classList.add("bicycles__button_checked");
@@ -118,11 +133,6 @@ nextButtonGravel.addEventListener("click", () => {
         bicyclesButtons.classList.remove("margin_minus");
         bicyclesButtons.classList.remove("margin_minusBig");
 
-        bigBackground.classList.remove("flex-element_display_block");
-        smallBackground.classList.remove("flex-element_display_block");
-        bikeFix.classList.add("flex-element__rim-bike-fix_position_middle");
-        bikeFix.classList.remove("flex-element__rim-bike-fix_position_high");
-        bikeFix.classList.remove("flex-element__rim-bike-fix_position_low");
 
         Highway.classList.add("bicycles_checked");
         Gravel.classList.remove("bicycles_checked");
@@ -133,6 +143,7 @@ nextButtonGravel.addEventListener("click", () => {
         tabHighway.classList.add("bicycles__button_checked");
         tabTT.classList.remove("bicycles__button_checked");
         tabGravel.classList.remove("bicycles__button_checked");
+        remove(dropdown);
       });
       tabGravel.addEventListener("click", () => {
         slides = document.getElementsByClassName("bicycles__card_gravel");
@@ -142,9 +153,6 @@ nextButtonGravel.addEventListener("click", () => {
           showAll();
         bicyclesButtons.classList.remove("margin_minusBig");
         bicyclesButtons.classList.add("margin_minus");
-        bikeFix.classList.remove("flex-element__rim-bike-fix_position_middle");
-        bikeFix.classList.add("flex-element__rim-bike-fix_position_high");
-        bikeFix.classList.remove("flex-element__rim-bike-fix_position_low");
 
         Highway.classList.remove("bicycles_checked");
         Gravel.classList.add("bicycles_checked");
@@ -155,6 +163,7 @@ nextButtonGravel.addEventListener("click", () => {
         tabGravel.classList.add("bicycles__button_checked");
         tabTT.classList.remove("bicycles__button_checked");
         tabHighway.classList.remove("bicycles__button_checked");
+        remove(dropdown);
       });
       tabTT.addEventListener("click", () => {
         slides = document.getElementsByClassName("bicycles__card_TT");
@@ -164,9 +173,6 @@ nextButtonGravel.addEventListener("click", () => {
          showAll();
         bicyclesButtons.classList.add("margin_minusBig");
         bicyclesButtons.classList.remove("margin_minus");
-        bikeFix.classList.remove("flex-element__rim-bike-fix_position_middle");
-        bikeFix.classList.remove("flex-element__rim-bike-fix_position_high");
-        bikeFix.classList.add("flex-element__rim-bike-fix_position_low");
 
         Highway.classList.remove("bicycles_checked");
         Gravel.classList.remove("bicycles_checked");
@@ -177,6 +183,7 @@ nextButtonGravel.addEventListener("click", () => {
         tabTT.classList.add("bicycles__button_checked");
         tabHighway.classList.remove("bicycles__button_checked");
         tabGravel.classList.remove("bicycles__button_checked");
+        remove(dropdown);
       });
   
 

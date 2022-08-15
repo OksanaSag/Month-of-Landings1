@@ -1,5 +1,6 @@
 .road {
     padding: 4.167vw 0 4.167vw 8.333vw;
+    display: none;
     @media screen and (max-width: 572px) {
         position: relative;
         padding: 0 18px 40px;
