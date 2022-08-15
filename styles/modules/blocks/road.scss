@@ -12,7 +12,7 @@
             margin-top: 80px;
             display: block;
         }
-        }
+    }
     &__highway {
         display: none;
     }
@@ -30,7 +30,7 @@
             position: absolute;
             top: 10px;
             right: 18px;
-            }
+        }
     }
     &__arrows {
         height: 50px;
@@ -44,7 +44,7 @@
         @media screen and (max-width: 572px) {
             width: 24px;
             height: 24px;
-            }
+        }
         &:hover {
             opacity: .6;
         }
@@ -66,7 +66,7 @@
         padding: 5.556vw 0 3.472vw;
         @media screen and (max-width: 572px) {
             padding: 40px 0;
-            }
+        }
     }
     &__green-sign {
         position: absolute;
@@ -75,7 +75,7 @@
             width: 70px;
             height: 28px;
             bottom: 53px;
-            }
+        }
     }
     &__line {
         position: absolute;
@@ -86,7 +86,7 @@
             height: 12px;
             bottom: 60px;
             left: 10px;
-            }
+        }
     }
     &__image {
         min-width: 650px;
@@ -99,9 +99,9 @@
             @media screen and (max-width: 572px) {
                 min-width: 284px;
                 height: 175px;
-                }
+            }
     }
 }
 .road_checked {
     display: block;
-  }
+}

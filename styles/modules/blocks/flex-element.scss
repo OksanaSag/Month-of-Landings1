@@ -5,11 +5,11 @@
     position: relative;
         @media screen and (max-width: 767px) {
             gap: 10vw;
-            }
+        }
             @media screen and (max-width: 572px) {
                 justify-content: center;
                 padding-left: 0;
-                }
+            }
     &__container {
         padding-top: 5.556vw;
         @media screen and (max-width: 572px) {
@@ -20,7 +20,7 @@
             padding: 40px 18px;
             box-sizing: border-box;
             gap: 40px;
-            }
+        }
     }
     &__image {
         width: 42.361vw;
@@ -34,7 +34,7 @@
             width: 254px;
             height: 348px;
             padding-top: 0;
-            }
+        }
         
     }
     &__hidden-image {
@@ -42,22 +42,19 @@
     }
     &__button {
         overflow: hidden;
-    background: linear-gradient(to right, #319E75 50%, $buttonColor 50%);
-    background-size: 200% 100%;
-    background-position: 100%;
-    transition: background-position .5s ease;
-    width: 180px;
-    height: 50px;
-    padding: 0;
-    border: none;
-    border-radius: 4px;
-    color: #FFFFFF;
-    margin-top: 3.472vw;
-    cursor: pointer;
-    position: relative;
-        &:hover {
-            background-position: 0 100%;
-          }
+        background: linear-gradient(to right, #319E75 50%, $buttonColor 50%);
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position .5s ease;
+        width: 180px;
+        height: 50px;
+        padding: 0;
+        border: none;
+        border-radius: 4px;
+        color: #FFFFFF;
+        margin-top: 3.472vw;
+        cursor: pointer;
+        position: relative;
         @media screen and (max-width: 572px) {
             width: 284px;
             height: 46px;
@@ -66,6 +63,9 @@
             line-height: 19px;
             font-weight: 600;
             letter-spacing: 1px;
+        }
+            &:hover {
+                background-position: 0 100%;
             }
     }
     &__text-line {
@@ -75,7 +75,7 @@
         line-height: 1;
         @media screen and (max-width: 804px) {
             display: none;
-            }
+        }
     }
     &__long-line {
         margin-left: 2.083vw;
@@ -99,7 +99,7 @@
             left: -30px;
             width: 234px;
             height: 160px;
-            }
+        }
     }
     &__popup {
         min-width: 56.25vw;
@@ -120,11 +120,11 @@
                 @media screen and (max-width: 572px) {
                     display: block;
                     }
-                    }
-                    &_display_none {
-                        @media screen and (max-width: 572px) {
-                            display: none;
-                            } 
+            }
+            &_display_none {
+                @media screen and (max-width: 572px) {
+                        display: none;
+                } 
             }
     }
 }

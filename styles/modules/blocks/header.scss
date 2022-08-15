@@ -30,37 +30,36 @@
         font-size: 14px;
         line-height: 18px;
         transition: $transition;
-        &:last-of-type {
-            margin-right: 120px;
-        }
-        @media screen and (max-width: 767px) {
-            font-size: 18px;
-            font-weight: 500;
             &:last-of-type {
-                margin-right: 0;
+                margin-right: 120px;
             }
-        }
-        &:hover {
-            opacity: 0.7;
-        }
-    
+            @media screen and (max-width: 767px) {
+                font-size: 18px;
+                font-weight: 500;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+            &:hover {
+                opacity: 0.7;
+            }
     }
     &__button {
         display: none;
         padding: 0;
-        & .header__image-line {
-            transition: $transition;
-        }
-        &:hover .header__image-line {
-            box-shadow: 2px 2px 1px 1px rgb(175, 174, 174);      
-        }
-        @media screen and (max-width: 767px) {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            border: none;          
-            background-color: transparent;
-            cursor: pointer;
+            @media screen and (max-width: 767px) {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                border: none;          
+                background-color: transparent;
+                cursor: pointer;
+            }
+            & .header__image-line {
+                transition: $transition;
+            }
+            &:hover .header__image-line {
+                box-shadow: 2px 2px 1px 1px rgb(175, 174, 174);      
             }
     }
     &__popup {

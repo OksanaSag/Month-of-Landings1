@@ -72,12 +72,6 @@
   display: none;
   padding: 0;
 }
-.header__button .header__image-line {
-  transition: all 0.5s ease;
-}
-.header__button:hover .header__image-line {
-  box-shadow: 2px 2px 1px 1px rgb(175, 174, 174);
-}
 @media screen and (max-width: 767px) {
   .header__button {
     display: flex;
@@ -87,6 +81,12 @@
     background-color: transparent;
     cursor: pointer;
   }
+}
+.header__button .header__image-line {
+  transition: all 0.5s ease;
+}
+.header__button:hover .header__image-line {
+  box-shadow: 2px 2px 1px 1px rgb(175, 174, 174);
 }
 .header__popup {
   display: flex;
@@ -455,9 +455,6 @@
   cursor: pointer;
   position: relative;
 }
-.flex-element__button:hover {
-  background-position: 0 100%;
-}
 @media screen and (max-width: 572px) {
   .flex-element__button {
     width: 284px;
@@ -468,6 +465,9 @@
     font-weight: 600;
     letter-spacing: 1px;
   }
+}
+.flex-element__button:hover {
+  background-position: 0 100%;
 }
 .flex-element__text-line {
   margin: 11.597vw 0 0;

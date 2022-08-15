@@ -9,7 +9,7 @@
             width: 100%;
             display: block;
         }
-        }
+    }
     &__container {
         display: flex;
         align-items: center;
@@ -18,7 +18,7 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 40px;
-            }
+        }
     }
     &__title {
         margin: 0;
@@ -29,7 +29,7 @@
         @media screen and (max-width: 572px) {
             font-size: 32px;
             line-height: 40px;
-            }
+        }
     }
     &__button {
         padding: 0;
@@ -44,7 +44,7 @@
         @media screen and (max-width: 572px) {
             font-size: 11px;
             padding-bottom: 20px;
-            }
+        }
         &:hover {
             opacity: 0.6;
         }
@@ -56,7 +56,7 @@
             position: absolute;
             right: 12px;
             top: 13px;
-            }
+        }
     }
     &__buttons {
         display: flex;
@@ -67,7 +67,7 @@
             height: 30px;
             align-items: flex-start;
             transition: $transition;
-            }
+        }
             &_select_list {
                 display: none;
                 @media screen and (max-width: 572px) {
@@ -78,7 +78,7 @@
                     background-color: #F4F4F4;
                     font-size: 11px;
                     font-weight: 600;
-                    }
+                }
             }
     }
     
@@ -88,8 +88,7 @@
         display: none;
         @media screen and (max-width: 572px) {
             padding: 5.133vw 0 4.167vw;
-            }
-        
+        }
     }
     &__rim-image {
         width: 26.389vw;
@@ -112,7 +111,6 @@
             &:hover {
                 box-shadow: none;
             }
-
         }
     }
     &__image {
@@ -176,7 +174,7 @@
             gap: 5px;
             justify-content: center;
             align-items: center;
-            }
+        }
        
     }
     &__slider-dot {
@@ -204,20 +202,20 @@
     }
   }
   .bicycles_checked {
-  display: flex;
-  @media screen and (max-width: 572px) {
-    justify-content: center;
-}
+    display: flex;
+        @media screen and (max-width: 572px) {
+            justify-content: center;
+        }
   }
   .margin_minus {
     @media screen and (max-width: 572px) {
         margin-top: -39px;
-        }
+    }
    
 }
 .margin_minusBig {
     @media screen and (max-width: 572px) {
         margin-top: -75px;
-        }
+    }
    
 }
