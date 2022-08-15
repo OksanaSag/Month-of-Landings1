@@ -54,6 +54,8 @@
                 border: none;          
                 background-color: transparent;
                 cursor: pointer;
+                position: fixed;
+                z-index: 3;
             }
             & .header__image-line {
                 transition: $transition;
@@ -74,7 +76,7 @@
         opacity: 0;
         transition: $transition;
         visibility: hidden;
-        z-index: 2;
+        z-index: 4;
     }
     &__popup-container {
         background-color: $backgroundDay;
